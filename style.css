@@ -1,0 +1,450 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1B98E0;
+}
+
+.header {
+    max-width: 100%;
+    height: 30%;
+    /*   border: 1px solid black;*/
+    /* border-left: 1px solid #ccc;*/
+    border-radius: 5px;
+}
+
+.header img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/*fim header*/
+
+
+/*Menu Lateral início e tabela de conteúdo*/
+
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current "tab button" class */
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    /* border: 1px solid rgb(161, 31, 31);*/
+    width: 70%;
+    border-left: none;
+    height: 300px;
+    display: none;
+    border-radius: 5px;
+}
+
+@media(max-width:430px) {
+    .tab {
+        width: 100%;
+        position: relative;
+    }
+    .tabcontent {
+        width: 100%;
+    }
+}
+
+
+/*Menu Lateral fim e tabela de conteúdo*/
+
+
+/*MENU PROJETOS INTEGRADORES INÍCIO*/
+
+#myInput {
+    background-image: url('/css/searchicon.png');
+    /* Add a search icon to input */
+    background-position: 10px 12px;
+    /* Position the search icon */
+    background-repeat: no-repeat;
+    /* Do not repeat the icon image */
+    width: 100%;
+    /* Full-width */
+    font-size: 16px;
+    /* Increase font-size */
+    padding: 12px 20px 12px 40px;
+    /* Add some padding */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    margin-bottom: 12px;
+    /* Add some space below the input */
+}
+
+#myTable {
+    border-collapse: collapse;
+    /* Collapse borders */
+    width: 100%;
+    /* Full-width */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    font-size: 18px;
+    /* Increase font-size */
+}
+
+#myTable th,
+#myTable td {
+    text-align: left;
+    /* Left-align text */
+    padding: 12px;
+    /* Add padding */
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+
+
+/*MENU PROJETOS INTEGRADORES FIM*/
+
+
+/*MENU INCUBAETE INÍCIO*/
+
+
+/* width barra de rolagem Scroll*/
+
+ ::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #25499d;
+}
+
+
+/*incubaete menu início*/
+
+body {
+    /*background-color: #f1f1f1;*/
+    padding: 20px;
+    font-family: Arial;
+}
+
+
+/* Center website */
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+
+/* Add padding BETWEEN each column (if you want) */
+
+.row .column_f_inscricao .content {
+    display: none;
+}
+
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+
+/* Create three equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 33.33%;
+    display: none;
+    /* Hide columns by default */
+}
+
+
+/* Clear floats after rows */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Content */
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+
+/* The "show" class is added to the filtered elements */
+
+.show {
+    display: block;
+}
+
+
+/* Style the buttons */
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/* Add a grey background color on mouse-over */
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+
+/* Add a dark background color to the active button */
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+
+/*MENU INCUBAETE FIM*/
+
+
+/* card projeto em andamento*/
+
+
+/*
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+        
+        #myBtn {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+        
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+        /*modal*/
+
+
+/* The Modal (background) */
+
+
+/*
+        .modal {
+            display: none;
+            /* Hidden by default */
+
+
+/* position: fixed;
+    /* Stay in place */
+
+
+/* z-index: 1;
+    /* Sit on top */
+
+
+/* padding-top: 100px;
+    /* Location of the box */
+
+
+/* left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+
+
+/*  height: 100%;
+    /* Full height */
+
+
+/*   overflow: auto;
+    /* Enable scroll if needed */
+
+
+/* background-color: rgb(0,    0,    0);
+    /* Fallback color */
+
+
+/*  background-color: rgba(0,   0,    0,    0.4);
+    /* Black w/ opacity */
+
+
+/*}
+
+/* Modal Content */
+
+
+/*
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+        /* Add Animation */
+
+
+/*
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+        
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+        /* The Close Button */
+
+
+/*
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+        
+        .modal-body {
+            padding: 2px 16px;
+        }
+        
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
